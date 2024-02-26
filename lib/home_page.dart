@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Home_Page extends StatefulWidget {
-  const Home_Page({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return _Home_PageState();
+    return _HomePageState();
   }
 }
 
 // ignore: camel_case_types, non_constant_identifier_names
-class _Home_PageState extends State<Home_Page> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -83,7 +83,7 @@ class _Home_PageState extends State<Home_Page> {
               )
             ]),
 
-            Container(
+            SizedBox(
               height: size.height * 0.25,
               // decoration: BoxDecoration(
               //     borderRadius: BorderRadius.circular(10), color: Colors.blue),
@@ -652,7 +652,7 @@ class _Home_PageState extends State<Home_Page> {
               height: size.height * .35,
               child: GridView(
                   scrollDirection: Axis.horizontal,
-                  physics: PageScrollPhysics(),
+                  physics: const PageScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1,
                     crossAxisSpacing: 7,
@@ -1560,11 +1560,11 @@ class CarouselItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         color: Colors.blue,
       ),
+      width: size.width * 0.8,
       child: Image.asset(
         'assets/images/product1.jpg',
         fit: BoxFit.cover,
       ),
-      width: size.width * 0.8,
     );
   }
 }

@@ -9,14 +9,14 @@ import 'account.dart';
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
   @override
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   // TODO: Add state variables and functions
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
-    const Home_Page(),
+    const HomePage(),
     const Search(),
     const OfficialBrand(),
     const Cart(),
