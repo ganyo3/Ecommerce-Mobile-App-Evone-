@@ -20,10 +20,30 @@ class _Home_PageState extends State<Home_Page> {
       backgroundColor: const Color.fromARGB(255, 100, 100, 107),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 100, 100, 107),
-        title: const Text(
-          'Evone',
-          style: TextStyle(fontSize: 30),
-        ),
+        actions: [
+          const Text(
+            'Evone',
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.favorite,
+              color: Colors.white,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.notifications,
+              color: Colors.white,
+            ),
+          )
+        ],
       ),
       drawer: callDrawer(context),
       body: SafeArea(
@@ -1531,17 +1551,16 @@ class CarouselItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       margin: const EdgeInsets.symmetric(
-                horizontal: 10,
-                vertical: 10,
-              ),
+      margin: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 10,
+      ),
       padding: const EdgeInsets.all(3.0),
-      decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(15),
-          color: Colors.blue,
-          ),
-      child: 
-      Image.asset(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        color: Colors.blue,
+      ),
+      child: Image.asset(
         'assets/images/product1.jpg',
         fit: BoxFit.cover,
       ),

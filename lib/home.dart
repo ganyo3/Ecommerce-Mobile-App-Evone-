@@ -32,11 +32,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     // TODO: Show selected tab
+      // TODO: Show selected tab
       body: pages[_selectedIndex],
       // TODO: Add bottom navigation bar
       bottomNavigationBar: BottomNavigationBar(
-       backgroundColor:const Color.fromARGB(255, 100, 100, 107),
+        backgroundColor: const Color.fromARGB(255, 100, 100, 107),
         type: BottomNavigationBarType.fixed,
         // 5
         selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
@@ -46,24 +46,39 @@ class _HomeState extends State<Home> {
         // 6
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.white,),
+            icon: Icon(
+              Icons.home,
+              color: Colors.white,
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-             icon: Icon(Icons.search, color: Colors.white,),
+            icon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
             label: 'Search',
           ),
           BottomNavigationBarItem(
-             label: 'Official Brand',
-             icon: Icon(Icons.stars_rounded, color: Colors.white,),
+            label: 'Official Brand',
+            icon: Icon(
+              Icons.stars_rounded,
+              color: Colors.white,
+            ),
           ),
           BottomNavigationBarItem(
-             label: 'Cart',
-             icon: Icon(Icons.shopping_cart, color: Colors.white,),
+            label: 'Cart',
+            icon: Icon(
+              Icons.shopping_cart,
+              color: Colors.white,
+            ),
           ),
           BottomNavigationBarItem(
-             label: 'Account',
-             icon: Icon(Icons.person, color: Colors.white,),
+            label: 'Account',
+            icon: Icon(
+              Icons.person,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
