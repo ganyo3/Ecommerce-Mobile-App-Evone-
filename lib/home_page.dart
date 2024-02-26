@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'login_page.dart';
+import 'signup_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -1449,7 +1451,10 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Login_Page()),
+              );
             },
           ),
           ListTile(
@@ -1470,7 +1475,10 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white,
             ),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Signup_Page()),
+              );
             },
           ),
           ListTile(
@@ -1539,48 +1547,48 @@ class CarouselItem extends StatelessWidget {
             vertical: 10,
           ),
           padding: EdgeInsets.symmetric(
-            horizontal: size.width*0.47,
+            horizontal: size.width * 0.47,
           ),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-            image: const DecorationImage(
-                  image: AssetImage("assets/images/product1.jpg"),
-                   fit: BoxFit.cover,
-                   alignment: Alignment.center,
-                  )),
-         ),
+              image: const DecorationImage(
+                image: AssetImage("assets/images/product1.jpg"),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              )),
+        ),
         Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 10,
           ),
           padding: EdgeInsets.symmetric(
-            horizontal: size.width*0.47,
+            horizontal: size.width * 0.47,
           ),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-            image: const DecorationImage(
-                  image: AssetImage("assets/images/product2.jpg"),
-                   fit: BoxFit.cover,
-                   alignment: Alignment.center,
-                  )),
-         ),
+              image: const DecorationImage(
+                image: AssetImage("assets/images/product2.jpg"),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              )),
+        ),
         Container(
           margin: const EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 10,
           ),
           padding: EdgeInsets.symmetric(
-            horizontal: size.width*0.47,
+            horizontal: size.width * 0.47,
           ),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-            image: const DecorationImage(
-                  image: AssetImage("assets/images/product3.jpg"),
-                   fit: BoxFit.cover,
-                   alignment: Alignment.center,
-                  )),
-         ),
+              image: const DecorationImage(
+                image: AssetImage("assets/images/product3.jpg"),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              )),
+        ),
       ],
     );
   }

@@ -19,7 +19,7 @@ class CircleImage extends StatelessWidget {
       radius: imageRadius,
       // 4
       child: CircleAvatar(
-        radius: imageRadius - 0,
+        radius: imageRadius - 5,
         backgroundImage: imageProvider,
       ),
     );
@@ -42,20 +42,13 @@ class AuthorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Replace return Container(...);
     return Container(
-      margin: const EdgeInsets.all(10),
-      decoration: const BoxDecoration(
-           color:Color.fromARGB(255, 114, 118, 126),
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-          shape: BoxShape.rectangle,
-      ),
-      padding: const EdgeInsets.all(35),
+      padding: const EdgeInsets.all(16),
       child: Row(
         // TODO 3: add alignment
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // 1
-            Row(
+          Row(
             children: [
               CircleImage(
                 imageProvider: imageProvider,
@@ -74,13 +67,6 @@ class AuthorCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                   
-                   const SizedBox(height: 10,),
-           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children:[
-          const Icon(Icons.location_on_sharp,color: Colors.white,),
-const SizedBox(width: 5,),
                   Text(
                     title,
                     style: const TextStyle(
@@ -88,13 +74,22 @@ const SizedBox(width: 5,),
                       fontWeight: FontWeight.bold,
                     ),
                   )
-                 ])
                 ],
               ),
             ],
           ),
           // TODO 2: add IconButton
-         
+          IconButton(
+            onPressed: () {
+              const snackBar = SnackBar(
+                content: Text('Favorite Saved'),
+              );
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            },
+            icon: const Icon(Icons.favorite_border),
+            iconSize: 30,
+            color: Colors.red[400],
+          )
         ],
       ),
     );
