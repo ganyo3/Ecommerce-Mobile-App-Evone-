@@ -29,6 +29,9 @@ class _HomePageState extends State<HomePage> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(
+            width: size.width * 0.35,
+          ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -85,33 +88,11 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(
               height: size.height * 0.25,
-              // decoration: BoxDecoration(
-              //     borderRadius: BorderRadius.circular(10), color: Colors.blue),
-              // margin: const EdgeInsets.symmetric(
-              //   horizontal: 10,
-              //   vertical: 10,
-              // ),
               child: ListView(
                 physics: const PageScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 children: [
                   CarouselItem(size: size),
-                  Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: Image.asset(
-                      'assets/images/product1.png',
-                      fit: BoxFit.cover,
-                      width: size.width * 0.80,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: Image.asset(
-                      'assets/images/product1.png',
-                      fit: BoxFit.cover,
-                      width: size.width * 0.80,
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -1550,21 +1531,57 @@ class CarouselItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(
-        horizontal: 10,
-        vertical: 10,
-      ),
-      padding: const EdgeInsets.all(3.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Colors.blue,
-      ),
-      width: size.width * 0.8,
-      child: Image.asset(
-        'assets/images/product1.jpg',
-        fit: BoxFit.cover,
-      ),
+    return Row(
+      children: [
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product1.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product2.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product3.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+      ],
     );
   }
 }

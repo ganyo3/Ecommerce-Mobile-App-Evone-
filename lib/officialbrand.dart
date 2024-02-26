@@ -56,88 +56,17 @@ class _OfficialBrandState extends State<OfficialBrand> {
 
                 SizedBox(
                   height: size.height * 0.25,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.blue
-                    ),
-                    margin: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 10,
-                    ),
-                    child: ListView(
-                      physics: const PageScrollPhysics(),
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Image.asset(
-                              'assets/images/product1.png',
-                              fit: BoxFit.cover,
-                              width: size.width * 0.8,
-                            ),
-                      ),
-
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Image.asset(
-                            'assets/images/product1.png',
-                            fit: BoxFit.cover,
-                            width: size.width * 0.80,
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Image.asset(
-                            'assets/images/product1.png',
-                            fit: BoxFit.cover,
-                            width: size.width * 0.80,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  child:  SizedBox(
+              height: size.height * 0.25,
+              child: ListView(
+                physics: const PageScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  CarouselItem(size: size),
+                ],
+              ),
+            ),
                 ),
-
-                //TODO: Adding a Dashboard.
-                //     SizedBox(
-                //       height: size.height * 0.25,
-                //      child: GridView.count(
-                //         physics:PageScrollPhysics(),
-                //           scrollDirection: Axis.horizontal,
-                //           // crossAxisSpacing: 5,
-                //            padding: EdgeInsets.symmetric(
-                //           vertical: size.height * .02,
-                //           horizontal: size.width * .2),
-                //           childAspectRatio: 1,
-                //           mainAxisSpacing: 5,
-                //           crossAxisCount: 1,
-                //           children: [
-
-                //  Container(
-                //               decoration: BoxDecoration(
-                //                 borderRadius: BorderRadius.circular(10),
-                //                 image:const DecorationImage(image: AssetImage('assets/images/product1.png'))
-                //               ),
-                //             ),
-
-                //             Container(
-                //               decoration: BoxDecoration(
-                //                 borderRadius: BorderRadius.circular(10),
-                //                 image:const DecorationImage(image: AssetImage('assets/images/product2.png'))
-                //               ),
-                //             ),
-
-                //             Container(
-                //               decoration: BoxDecoration(
-                //                 borderRadius: BorderRadius.circular(10),
-                //                 image:const DecorationImage(image: AssetImage('assets/images/product3.png'))
-                //               ),
-                //             ),
-
-                //           ]),
-                //     ),
 
                 Row(
                   children: [
@@ -705,23 +634,70 @@ class _OfficialBrandState extends State<OfficialBrand> {
       ),
     );
   }
-
   //TODO: Add buildrecipeCard() here
 }
 
-//  ListView.builder(
-//           itemCount: BrandSpecial.samples.length,
-//           itemBuilder: (BuildContext context, int index) {
-//             //TODO: Update to return recipe card
-//             return GestureDetector(
-//               onTap: () {
-//                 // Navigator.push(context, MaterialPageRoute(builder: (context) {
-//                 //   return Container(
-//                 //     color: Colors.blue,
-//                 //   );
-//                 // }));
-//               },
-//               child: buildBrandSpecialCard(BrandSpecial.samples[index]),
-//             );
-//           },
-//          ),
+class CarouselItem extends StatelessWidget {
+  const CarouselItem({
+    super.key,
+    required this.size,
+  });
+
+  final Size size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product1.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product2.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+        Container(
+          margin: const EdgeInsets.symmetric(
+            horizontal: 10,
+            vertical: 10,
+          ),
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width*0.47,
+          ),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            image: const DecorationImage(
+                  image: AssetImage("assets/images/product3.jpg"),
+                   fit: BoxFit.cover,
+                   alignment: Alignment.center,
+                  )),
+         ),
+      ],
+    );
+  }
+}
