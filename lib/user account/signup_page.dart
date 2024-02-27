@@ -20,7 +20,7 @@ class Logout_PageState extends State<Signup_Page> {
     var size = MediaQuery.of(context).size;
     return MaterialApp(
       home: Scaffold(
-        backgroundColor:  const Color.fromARGB(255, 100, 100, 107),
+        backgroundColor: const Color.fromARGB(255, 100, 100, 107),
         // appBar: AppBar(
         //   centerTitle: true,
         // backgroundColor: const Color.fromARGB(255, 214, 209, 190),
@@ -33,56 +33,58 @@ class Logout_PageState extends State<Signup_Page> {
         //     ),
         //   ),
         // ),
-        body:DecoratedBox(
+        body: DecoratedBox(
           decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/images/anime.png"),
-              fit: BoxFit.cover,
-              opacity: 0.5,
-              )
-          ),
+              image: DecorationImage(
+            image: AssetImage("assets/images/anime.png"),
+            fit: BoxFit.cover,
+            opacity: 0.5,
+          )),
           child: SafeArea(
             child: SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: size.height*0.05),
+              padding: EdgeInsets.only(bottom: size.height * 0.05),
               child: Column(
                 children: [
-                  const Text("Sign Up",
-                  style: TextStyle(
-              fontSize: 25,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
+                  const Text(
+                    "Sign Up",
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                 Column(
-                   crossAxisAlignment: CrossAxisAlignment.start,
-                   children: [
-                     FloatingActionButton.small(
-                       backgroundColor: Colors.black,
-                       onPressed: () {
-                         Navigator.pop(context);
-                       },
-                       child: const Icon(
-                         Icons.arrow_back,
-                         color: Colors.white,
-                       ),
-                     ),
-                     const Text(
-                       "Register Your Account",
-                       style: TextStyle(
-                         fontSize: 30,
-                         fontWeight: FontWeight.bold,
-                         color: Colors.white,
-                       ),
-                     ),
-                     SizedBox(
-                       height: size.height * 0.02,
-                     ),
-                     const Text("Join the hub...",
-                       style: TextStyle(
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      FloatingActionButton.small(
+                        backgroundColor: Colors.black,
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Icon(
+                          Icons.arrow_back,
                           color: Colors.white,
                         ),
-                     ),
-                   ],
-                 ),
+                      ),
+                      const Text(
+                        "Register Your Account",
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        height: size.height * 0.02,
+                      ),
+                      const Text(
+                        "Join the hub...",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
                   SizedBox(
                     height: size.height * 0.02,
                   ),
@@ -95,16 +97,19 @@ class Logout_PageState extends State<Signup_Page> {
                           children: [
                             TextFormField(
                               decoration: const InputDecoration(
-                                label: Text("First Name",
+                                label: Text(
+                                  "First Name",
                                   style: TextStyle(
-                          color: Colors.white,
-                        ),
+                                    color: Colors.white,
+                                  ),
                                 ),
-                                enabledBorder:UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                enabledBorder: UnderlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
                                     borderSide: BorderSide(
-                                  width: 5,
-                                )),
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
                               ),
                             ),
                             SizedBox(
@@ -112,16 +117,19 @@ class Logout_PageState extends State<Signup_Page> {
                             ),
                             TextFormField(
                               decoration: const InputDecoration(
-                                label: Text("Last Name",
+                                label: Text(
+                                  "Last Name",
                                   style: TextStyle(
-                          color: Colors.white,
-                        ),
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 enabledBorder: UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
                                     borderSide: BorderSide(
-                                  width: 5,
-                                )),
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
                               ),
                             ),
                             SizedBox(
@@ -129,16 +137,19 @@ class Logout_PageState extends State<Signup_Page> {
                             ),
                             TextFormField(
                               decoration: const InputDecoration(
-                                label: Text("Email",
+                                label: Text(
+                                  "Email",
                                   style: TextStyle(
-                          color: Colors.white,
-                        ),
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 enabledBorder: UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
                                     borderSide: BorderSide(
-                                  width: 5,
-                                )),
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
                               ),
                             ),
                             SizedBox(
@@ -146,34 +157,19 @@ class Logout_PageState extends State<Signup_Page> {
                             ),
                             TextFormField(
                               decoration: const InputDecoration(
-                                label: Text("Mobile Number",
+                                label: Text(
+                                  "Mobile Number",
                                   style: TextStyle(
-                          color: Colors.white,
-                        ),
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 enabledBorder: UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
                                     borderSide: BorderSide(
-                                  width: 5,
-                                )),
-                              ),
-                            ),
-                            SizedBox(
-                              height: size.height * 0.01,
-                            ),
-                            TextFormField(
-                              obscureText: true,
-                              decoration: const InputDecoration(
-                                label: Text("Password",
-                                  style: TextStyle(
-                          color: Colors.white,
-                        ),
-                                ),
-                                enabledBorder: UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
-                                    borderSide: BorderSide(
-                                  width: 5,
-                                )),
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
                               ),
                             ),
                             SizedBox(
@@ -182,19 +178,42 @@ class Logout_PageState extends State<Signup_Page> {
                             TextFormField(
                               obscureText: true,
                               decoration: const InputDecoration(
-                                label: Text("Confirm Password",
+                                label: Text(
+                                  "Password",
                                   style: TextStyle(
-                          color: Colors.white,
-                        ),
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 enabledBorder: UnderlineInputBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
                                     borderSide: BorderSide(
-                                  width: 5,
-                                )
-                                ),
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
                               ),
-                            ),                        
+                            ),
+                            SizedBox(
+                              height: size.height * 0.01,
+                            ),
+                            TextFormField(
+                              obscureText: true,
+                              decoration: const InputDecoration(
+                                label: Text(
+                                  "Confirm Password",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                enabledBorder: UnderlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10)),
+                                    borderSide: BorderSide(
+                                      color: Colors.white,
+                                      width: 5,
+                                    )),
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -216,10 +235,11 @@ class Logout_PageState extends State<Signup_Page> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text("Already have an account?",
+                          const Text(
+                            "Already have an account?",
                             style: TextStyle(
-                          color: Colors.white,
-                        ),
+                              color: Colors.white,
+                            ),
                           ),
                           TextButton(
                               onPressed: () {
@@ -229,14 +249,20 @@ class Logout_PageState extends State<Signup_Page> {
                                       builder: (context) => const Login_Page()),
                                 );
                               },
-                              child: const Text("Log In",
+                              child: const Text(
+                                "Log In",
                                 style: TextStyle(
-                          color: Colors.blue,
-                        ),
+                                  color: Colors.blue,
+                                ),
                               ))
                         ],
                       ),
-                      const Text("Or Continue with; "),
+                      const Text(
+                        "Or Continue with; ",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

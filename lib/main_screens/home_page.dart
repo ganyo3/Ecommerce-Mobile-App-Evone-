@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
-import 'signup_page.dart';
+
+import '../shopping page/category_page.dart';
+import '../shopping page/shopping_cart.dart';
+import '../user account/login_page.dart';
+import '../user account/signup_page.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -62,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: InputDecoration(
                     hintText: 'Search for Products for Stores',
                     hintStyle: const TextStyle(
-                        color: Color.fromARGB(151, 255, 255, 255)),
+                        color: Color.fromARGB(150, 41, 41, 41)),
                     suffixIcon: TextButton(
                       child: const Text(
                         'Cancel',
@@ -1267,7 +1271,11 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ShoppingCart()),
+                  );
                 },
               ),
               ListTile(
@@ -1284,7 +1292,10 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Categories()),
+                  );
                 },
               ),
               ListTile(
