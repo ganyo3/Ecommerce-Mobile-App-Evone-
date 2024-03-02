@@ -95,123 +95,143 @@ class CategoriesState extends State<Categories> {
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(
-              Icons.shopping_cart_outlined,
-              color: Colors.white,
-            ),
+            icon: const Icon(Icons.shopping_cart_outlined, color: Colors.white),
           )
         ],
       ),
-    
+
       // TODO: Show selected tab
       body: SafeArea(
-           child: Row(
-             mainAxisAlignment: MainAxisAlignment.start,
-             crossAxisAlignment: CrossAxisAlignment.start,
-             children: [
-                
-           // TODO: Add Navigation bar
-           
-           Container(
-             width: size.width*0.25,
-             child: LayoutBuilder(
-               builder: (context, constraint) {
-                 return SingleChildScrollView(
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                      minHeight: constraint.maxHeight,
-                    ),
-                    child: IntrinsicHeight(
-                      child: NavigationRail(
-                 labelType: NavigationRailLabelType.all,
-                    selectedLabelTextStyle: const TextStyle(
-                      color: Colors.amber,
-                    ),
-                    unselectedLabelTextStyle: const TextStyle(),
-                    backgroundColor: const Color.fromARGB(255, 100, 100, 107),
-                    selectedIndex: _selectedIndex,
-                    onDestinationSelected: _onItemTapped,
-                    destinations: const [
-                        NavigationRailDestination(
-                          icon: Icon(
-                            Icons.fastfood,
-                            color: Colors.white,
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // TODO: Add Navigation bar
+
+              Container(
+                width: size.width * 0.2,
+                child: LayoutBuilder(builder: (context, constraint) {
+                  return SingleChildScrollView(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minHeight: constraint.maxHeight,
+                      ),
+                      child: IntrinsicHeight(
+                        child: NavigationRail(
+                          useIndicator: true,
+                          indicatorShape: const BeveledRectangleBorder(
+                              borderRadius: BorderRadius.horizontal(
+                                  right: Radius.circular(15))),
+                          indicatorColor: Colors.white,
+                          labelType: NavigationRailLabelType.all,
+                          selectedLabelTextStyle: const TextStyle(
+                            color: Colors.blueAccent,
                           ),
-                          label: Text("Gocery")),
-                       NavigationRailDestination(
-                          icon: Icon(
-                            Icons.tablet_android,
-                            color: Colors.white,
-                          ),
-                          label: Text("Phones & Tablets")),
-                     NavigationRailDestination(
-                          icon: Icon(
-                            Icons.health_and_safety,
-                            color: Colors.white,
-                          ),
-                          label: Text("Health & Beauty")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.laptop_mac_outlined,
-                            color: Colors.white,
-                          ),
-                          label: Text("Computing")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.cable,
-                            color: Colors.white,
-                          ),
-                          label: Text("Electronics")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.person,
-                            color: Colors.white,
-                          ),
-                          label: Text("Fashion")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.sports_esports_outlined,
-                            color: Colors.white,
-                          ),
-                          label: Text("Gaming")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.chair,
-                            color: Colors.white,
-                          ),
-                          label: Text("Home & Office")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.sports_tennis_rounded,
-                            color: Colors.white,
-                          ),
-                          label: Text("Sporting Goods")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.toys,
-                            color: Colors.white,
-                          ),
-                          label: Text("Toys for Kids")),
-                      NavigationRailDestination(
-                          icon: Icon(
-                            Icons.menu_book_rounded,
-                            color: Colors.white,
-                          ),
-                          label: Text("Book Shelf")),                    
-                    ],
+                          unselectedLabelTextStyle: const TextStyle(),
+                          backgroundColor: Colors.grey,
+                          selectedIndex: _selectedIndex,
+                          onDestinationSelected: _onItemTapped,
+                          destinations: const [
+                            NavigationRailDestination(
+                                icon: Icon(Icons.fastfood, color: Colors.blue),
+                                label: Text("Gocery",
+                                 textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.tablet_android,
+                                  color: Colors.blue,
+                                ),
+                                label: Text(
+                                  "Phones & Tablets",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.health_and_safety,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Health & Beauty",
+                                textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.laptop_mac_outlined,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Computing",
+                                 textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.cable,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Electronics",
+                                 textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.person,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Fashion",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.sports_esports_outlined,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Gaming",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.chair,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Home & Office",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.sports_tennis_rounded,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Sporting Goods",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.toys,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Toys for Kids",
+                                  textAlign: TextAlign.center,
+                                )),
+                            NavigationRailDestination(
+                                icon: Icon(
+                                  Icons.menu_book_rounded,
+                                  color: Colors.blue,
+                                ),
+                                label: Text("Book Shelf",
+                                  textAlign: TextAlign.center,
+                                )),
+                          ],
+                        ),
                       ),
                     ),
-                    ),
                   );
-               }
-             ),
-           ),
-           VerticalDivider(thickness: 5, width: 5,),
-               Expanded(
-                     flex: 2,
-                     child: pages[_selectedIndex]),
-             ]),
-         ),
+                }),
+              ),
+              //  VerticalDivider(thickness: 5, width: 5,),
+              SizedBox(
+                width: size.width * 0.02,
+              ),
+              Expanded(flex: 2, child: pages[_selectedIndex]),
+            ]),
+      ),
     );
   }
 }
