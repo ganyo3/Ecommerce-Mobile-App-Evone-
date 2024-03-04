@@ -59,7 +59,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                           image: AssetImage(
-                                            "assets/images/tomato_paste.jpeg",
+                                            "assets/images/category/bodyspray.jpg",
                                           ),
                                           fit: BoxFit.fill,
                                         )),
@@ -68,7 +68,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cooking Ingredient",
+                                      "Body Fragrants",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -95,13 +95,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/rice.jpeg",
+                                              "assets/images/category/makeups.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Grains and Rice")),
+                                    flex: 1, child: Text("Make-up Products")),
                               ],
                             ),
                           ),
@@ -116,7 +116,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -126,7 +126,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/noodles.jpeg",
+                                              "assets/images/category/wigs.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -134,7 +134,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Pasta, Noodles and Spaghetti",
+                                      "Women's Wigs",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -151,7 +151,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -161,7 +161,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cannedfood.jpeg",
+                                              "assets/images/category/skincare.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -169,7 +169,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Canned Food Products",
+                                      "Skin-Care Products",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -219,13 +219,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cereals.jpg",
+                                              "assets/images/category/personalcare.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cereal Foods")),
+                                    flex: 1, child: Text("Personal Care")),
                               ],
                             ),
                           ),
@@ -250,13 +250,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/milo.jpeg",
+                                              "assets/images/category/femininecare.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cocoa Powder")),
+                                    flex: 1, child: Text("Feminine Care")),
                               ],
                             ),
                           ),
@@ -281,13 +281,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/peakmilk.png",
+                                              "assets/images/category/chacoalwhite.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Milk and Cream")),
+                                    flex: 1, child: Text("Teeth Whitening")),
                               ],
                             ),
                           ),
@@ -302,7 +302,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -312,7 +312,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/sugar.png",
+                                              "assets/images/category/childrencare.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -320,7 +320,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Sugar, Syrups and Sweets",
+                                      "Children's Care",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -369,12 +369,12 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/bread.jpeg",
+                                              "assets/images/category/mouthwash.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
-                                const Expanded(flex: 1, child: Text("Bakery")),
+                                const Expanded(flex: 1, child: Text("Mouth-Wash Products")),
                               ],
                             ),
                           ),
@@ -399,13 +399,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/digestive.jpg",
+                                              "assets/images/category/toothpaste.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Biscuits")),
+                                    flex: 1, child: Text("Toothpastes")),
                               ],
                             ),
                           ),
@@ -430,7 +430,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/chips.jpeg",
+                                              "assets/images/category/firstaid.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -438,7 +438,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Crisps and Chips",
+                                      "FirstAid Kits",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -465,7 +465,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/margarine.jpeg",
+                                              "assets/images/category/foothealth.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -473,7 +473,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Diary, Cheese",
+                                      "Foot-Health",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -522,13 +522,13 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/coke.jpeg",
+                                              "assets/images/category/diabetes.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Bottled Beverages")),
+                                    flex: 1, child: Text("Diabetes Care")),
                               ],
                             ),
                           ),
@@ -543,7 +543,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -553,7 +553,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/wine.jpeg",
+                                              "assets/images/category/safersex.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -561,7 +561,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Fine Wine and Liquor",
+                                      "Safer Sex",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -588,7 +588,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cleaning.jpeg",
+                                              "assets/images/category/manicure.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -596,7 +596,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cleaning Tools",
+                                      "Manicure & Pedicure",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -623,7 +623,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/detergent.jpeg",
+                                              "assets/images/category/shampoo.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -631,7 +631,7 @@ class HealthBeautyState extends State<HealthBeauty> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Multipurpose Cleaner",
+                                      "Shampoo Products",
                                       textAlign: TextAlign.center,
                                     )),
                               ],

@@ -59,7 +59,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                           image: AssetImage(
-                                            "assets/images/tomato_paste.jpeg",
+                                            "assets/images/category/iphone1.jpeg",
                                           ),
                                           fit: BoxFit.fill,
                                         )),
@@ -68,7 +68,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cooking Ingredient",
+                                      "IOS-15-Featured",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -95,13 +95,13 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/rice.jpeg",
+                                              "assets/images/category/iphone2.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Grains and Rice")),
+                                    flex: 1, child: Text("IOS-11-12-13-14")),
                               ],
                             ),
                           ),
@@ -116,7 +116,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -126,7 +126,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/noodles.jpeg",
+                                              "assets/images/category/itablet1.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -134,7 +134,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Pasta, Noodles and Spaghetti",
+                                      "Tablet_Apple_Ipad",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -161,7 +161,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cannedfood.jpeg",
+                                              "assets/images/category/itablet2.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -169,7 +169,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Canned Food Products",
+                                      "Ipad-Pro-New Model",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -209,7 +209,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 4,
+                                  flex: 2,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -219,75 +219,13 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cereals.jpg",
+                                              "assets/images/category/phone1.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cereal Foods")),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/milo.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1, child: Text("Cocoa Powder")),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/peakmilk.png",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1, child: Text("Milk and Cream")),
+                                    flex: 1, child: Text("Android-10-Smartphone-Dual-Sim")),
                               ],
                             ),
                           ),
@@ -312,7 +250,73 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/sugar.png",
+                                              "assets/images/category/phone2.webp",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1, child: Text("Panasonic-Black-Cordless",
+                                    textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/infinix1.webp",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1, child: Text("Infinix X5 Pro-Tablet",
+                                    textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/infinix2.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -320,7 +324,164 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Sugar, Syrups and Sweets",
+                                      "Infinix Tablets-Featured",
+                                      textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ]),
+                ),
+              ),
+              const Divider(
+                thickness: 5,
+                indent: 5,
+                endIndent: 5,
+                color: Color.fromARGB(255, 209, 207, 207),
+              ),
+              SizedBox(
+                height: size.height * .35,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 209, 207, 207),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: GridView.count(
+                      physics: const NeverScrollableScrollPhysics(),
+                      padding: const EdgeInsets.all(10),
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/phone3.webp",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(flex: 1, child: Text("Jitterbug-Cell-Phones",
+                                textAlign: TextAlign.center,
+                                )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/phone 4.jpeg",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1, child: Text("UK-Mobile and Broadband",
+                                    textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/samsung1.webp",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "Sumsang-Galaxy-Tablets",
+                                      textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/samsung2.jpg",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "New-Samsung_Tablets-Windows",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -369,166 +530,13 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/bread.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(flex: 1, child: Text("Bakery")),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/digestive.jpg",
+                                              "assets/images/category/phone5.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Biscuits")),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/chips.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1,
-                                    child: Text(
-                                      "Crisps and Chips",
-                                      textAlign: TextAlign.center,
-                                    )),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/margarine.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1,
-                                    child: Text(
-                                      "Diary, Cheese",
-                                      textAlign: TextAlign.center,
-                                    )),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ]),
-                ),
-              ),
-              const Divider(
-                thickness: 5,
-                indent: 5,
-                endIndent: 5,
-                color: Color.fromARGB(255, 209, 207, 207),
-              ),
-              SizedBox(
-                height: size.height * .35,
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 209, 207, 207),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: GridView.count(
-                      physics: const NeverScrollableScrollPhysics(),
-                      padding: const EdgeInsets.all(10),
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/coke.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1, child: Text("Bottled Beverages")),
+                                    flex: 1, child: Text("BLU G90 Mobile")),
                               ],
                             ),
                           ),
@@ -553,7 +561,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/wine.jpeg",
+                                              "assets/images/category/iteltab.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -561,42 +569,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Fine Wine and Liquor",
-                                      textAlign: TextAlign.center,
-                                    )),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/cleaning.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1,
-                                    child: Text(
-                                      "Cleaning Tools",
+                                      "Itel-Prime-iv-Dual-sim-Tablet",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -623,7 +596,7 @@ class PhoneTabletState extends State<PhoneTablet> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/detergent.jpeg",
+                                              "assets/images/category/techno1.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -631,7 +604,42 @@ class PhoneTabletState extends State<PhoneTablet> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Multipurpose Cleaner",
+                                      "Techno-Droidpad-7c-pro",
+                                      textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/lenovotab.webp",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "Lenovo-P8-Tab 3-8-plus-TB",
                                       textAlign: TextAlign.center,
                                     )),
                               ],

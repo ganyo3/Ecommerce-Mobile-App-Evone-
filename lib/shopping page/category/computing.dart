@@ -59,7 +59,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                           image: AssetImage(
-                                            "assets/images/tomato_paste.jpeg",
+                                            "assets/images/category/dell-laptop.jpeg",
                                           ),
                                           fit: BoxFit.fill,
                                         )),
@@ -68,7 +68,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cooking Ingredient",
+                                      "Dell Laptops",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -95,13 +95,13 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/rice.jpeg",
+                                              "assets/images/category/delldesktop.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Grains and Rice")),
+                                    flex: 1, child: Text("Dell Desktops")),
                               ],
                             ),
                           ),
@@ -116,7 +116,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -126,7 +126,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/noodles.jpeg",
+                                              "assets/images/category/hpdesktop.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -134,7 +134,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Pasta, Noodles and Spaghetti",
+                                      "HP Desktops",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -151,7 +151,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -161,7 +161,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cannedfood.jpeg",
+                                              "assets/images/category/hplaptop.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -169,7 +169,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Canned Food Products",
+                                      "HP Laptops",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -219,13 +219,13 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cereals.jpg",
+                                              "assets/images/category/lenovodesktop.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cereal Foods")),
+                                    flex: 1, child: Text("Lenovo PCs")),
                               ],
                             ),
                           ),
@@ -250,13 +250,13 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/milo.jpeg",
+                                              "assets/images/category/lenovolaptop.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cocoa Powder")),
+                                    flex: 1, child: Text("Lenovo Laptops")),
                               ],
                             ),
                           ),
@@ -281,13 +281,13 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/peakmilk.png",
+                                              "assets/images/category/macbook1.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Milk and Cream")),
+                                    flex: 1, child: Text("MacBook Laptop")),
                               ],
                             ),
                           ),
@@ -302,7 +302,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -312,7 +312,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/sugar.png",
+                                              "assets/images/category/macbook2.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -320,7 +320,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Sugar, Syrups and Sweets",
+                                      "MacBook Desktop",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -369,12 +369,14 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/bread.jpeg",
+                                              "assets/images/category/hard-drive.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
-                                const Expanded(flex: 1, child: Text("Bakery")),
+                                const Expanded(flex: 1, child: Text("External Hard Drive",
+                                textAlign: TextAlign.center,
+                                )),
                               ],
                             ),
                           ),
@@ -399,13 +401,15 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/digestive.jpg",
+                                              "assets/images/category/headphone.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Biscuits")),
+                                    flex: 1, child: Text("Beats Headphones",
+                                    textAlign: TextAlign.center,
+                                    )),
                               ],
                             ),
                           ),
@@ -430,7 +434,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/chips.jpeg",
+                                              "assets/images/category/laptopstand.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -438,7 +442,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Crisps and Chips",
+                                      "Laptop Stands",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -465,7 +469,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/margarine.jpeg",
+                                              "assets/images/category/mifi.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -473,7 +477,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Diary, Cheese",
+                                      "MIFI Router",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -522,13 +526,13 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/coke.jpeg",
+                                              "assets/images/category/modem.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Bottled Beverages")),
+                                    flex: 1, child: Text("Modem Router")),
                               ],
                             ),
                           ),
@@ -543,7 +547,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -553,7 +557,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/wine.jpeg",
+                                              "assets/images/category/projector.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -561,7 +565,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Fine Wine and Liquor",
+                                      "Projectors",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -588,7 +592,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cleaning.jpeg",
+                                              "assets/images/category/speaker.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -596,7 +600,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cleaning Tools",
+                                      "Sound Systems",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -613,7 +617,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -623,7 +627,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/detergent.jpeg",
+                                              "assets/images/category/usbcables.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -631,7 +635,7 @@ class ComputingAccessoryState extends State<ComputingAccessory> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Multipurpose Cleaner",
+                                      "USB cables",
                                       textAlign: TextAlign.center,
                                     )),
                               ],

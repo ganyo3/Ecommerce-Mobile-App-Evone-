@@ -17,7 +17,7 @@ class SavedItemsState extends State<SavedItems> {
     var searchController;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:const Color.fromARGB(255, 230, 227, 227),
+        backgroundColor: const Color.fromARGB(255, 230, 227, 227),
         centerTitle: true,
         actions: [
           Padding(
@@ -39,7 +39,7 @@ class SavedItemsState extends State<SavedItems> {
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.search_sharp, color: Colors.white),
+            icon: const Icon(Icons.search_sharp, color: Colors.black),
           )
         ],
       ),
@@ -53,65 +53,85 @@ class SavedItemsState extends State<SavedItems> {
           child: Column(
             children: [
               Container(
-                  color:const Color.fromARGB(255, 230, 227, 227),
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
                   child: Column(
-                   children: [
+                    children: [
                       Row(
-                       children: [
-                          Row(
-                            children: [
-                             Image(
-                              image: const AssetImage(
-                                  'assets/images/sneaker1.jpg'),
-                            width: size.width*0.4,
-                            ),
-                            const Column(
-                                crossAxisAlignment:
-                                    CrossAxisAlignment.start,
-                                children: [
-                                Text(
-                                        'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-Golden',
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
                                 ),
-                                  Padding(
-                                    padding: EdgeInsets.only(left: 10),
-                                    child: Text(
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                    topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/sneaker1.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                          ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
                                       '\$50.00',
                                       style: TextStyle(
-                                       fontWeight: FontWeight.bold,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                  ),
-                                ]),
+                                  ]),
+                            ),
                           ]),
                         ],
                       ),
                       Row(
                         children: [
-                          TextButton(onPressed: (){}, 
-                          child: const Text("Remove",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
+                          SizedBox(
+                            width: size.width * 0.3,
                           ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child: Container(
+                              width: size.width*0.42,
+                           child: FloatingActionButton.extended(
+                                // shape:CircleBorder(si) ,
+                                backgroundColor: Colors.blue,
+                                // extendedPadding: const EdgeInsets.all(55),
+                                onPressed: () {},
+                              label: const Text(
+                                  'Buy Now',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
-                          SizedBox(width: size.width*0.38,),
-                            FloatingActionButton.extended(
-                              // shape: ,
-                        backgroundColor: Colors.blue,
-                        // extendedPadding: const EdgeInsets.all(55),
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.wallet,
-                          color: Colors.white,
-                        ),
-                        label: const Text(
-                          'Buy Now',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
                         ],
                       ),
                     ],
@@ -120,23 +140,268 @@ class SavedItemsState extends State<SavedItems> {
                 thickness: 10,
               ),
               Container(
-                color: Colors.yellow,
-                child: Image.asset("assets/images/Alien.png"),
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
+                                ),
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                    topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/sneaker2.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
+                                      '\$50.00',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ]),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: size.width * 0.3,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child: Container(
+                              width: size.width*0.42,
+                           child: FloatingActionButton.extended(
+                                // shape:CircleBorder(si) ,
+                                backgroundColor: Colors.blue,
+                                // extendedPadding: const EdgeInsets.all(55),
+                                onPressed: () {},
+                              label: const Text(
+                                  'Buy Now',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
+              const Divider(
+                thickness: 10,
               ),
+               Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
+                                ),
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                    topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/sneaker3.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
+                                      '\$50.00',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ]),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: size.width * 0.3,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child: Container(
+                              width: size.width*0.42,
+                           child: FloatingActionButton.extended(
+                                // shape:CircleBorder(si) ,
+                                backgroundColor: Colors.blue,
+                                // extendedPadding: const EdgeInsets.all(55),
+                                onPressed: () {},
+                              label: const Text(
+                                  'Buy Now',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
               const Divider(
                 thickness: 10,
               ),
               Container(
-                color: Colors.green,
-                child: Image.asset("assets/images/ishmael.JPG"),
-              ),
-              const Divider(
-                thickness: 10,
-              ),
-              Container(
-                color: Colors.black,
-                child: Image.asset("assets/images/Max.jpg"),
-              )
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
+                                ),
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                  topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/sneaker4.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                              // child: Image(
+                              //   image: const AssetImage(
+                              //       'assets/images/sneaker1.jpg'),
+                              //   width: size.width * 0.4,
+                              // ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
+                                      '\$50.00',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ]),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: size.width * 0.3,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child: Container(
+                              width: size.width*0.42,
+                           child: FloatingActionButton.extended(
+                                // shape:CircleBorder(si) ,
+                                backgroundColor: Colors.blue,
+                                // extendedPadding: const EdgeInsets.all(55),
+                                onPressed: () {},
+                              label: const Text(
+                                  'Buy Now',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),

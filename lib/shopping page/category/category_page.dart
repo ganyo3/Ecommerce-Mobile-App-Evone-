@@ -109,7 +109,7 @@ class CategoriesState extends State<Categories> {
               // TODO: Add Navigation bar
 
               Container(
-                width: size.width * 0.2,
+                width: size.width * 0.24,
                 child: LayoutBuilder(builder: (context, constraint) {
                   return SingleChildScrollView(
                     child: ConstrainedBox(
@@ -128,7 +128,7 @@ class CategoriesState extends State<Categories> {
                             color: Colors.blueAccent,
                           ),
                           unselectedLabelTextStyle: const TextStyle(),
-                          backgroundColor: Colors.grey,
+                           backgroundColor: const Color.fromARGB(255, 100, 100, 107),
                           selectedIndex: _selectedIndex,
                           onDestinationSelected: _onItemTapped,
                           destinations: const [
