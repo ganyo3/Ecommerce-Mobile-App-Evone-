@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unit_conversion/shopping%20page/wishlist.dart';
 
 import '../shopping page/category/category_page.dart';
 import '../shopping page/shopping_cart.dart';
@@ -1312,7 +1313,10 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SavedItems()),
+                  );
                 },
               ),
               ListTile(
