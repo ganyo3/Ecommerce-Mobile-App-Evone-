@@ -59,7 +59,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                           image: AssetImage(
-                                            "assets/images/tomato_paste.jpeg",
+                                            "assets/images/category/men-suit.webp",
                                           ),
                                           fit: BoxFit.fill,
                                         )),
@@ -68,7 +68,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cooking Ingredient",
+                                      "Men Suits",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -95,13 +95,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/rice.jpeg",
+                                              "assets/images/category/women-suit.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Grains and Rice")),
+                                    flex: 1, child: Text("Women Suits")),
                               ],
                             ),
                           ),
@@ -116,7 +116,7 @@ class FashionState extends State<Fashion> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -126,7 +126,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/noodles.jpeg",
+                                              "assets/images/category/women-jean.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -134,7 +134,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Pasta, Noodles and Spaghetti",
+                                      "Jeans for Women",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -151,7 +151,7 @@ class FashionState extends State<Fashion> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -161,7 +161,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cannedfood.jpeg",
+                                              "assets/images/category/men-jean.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -169,7 +169,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Canned Food Products",
+                                      "Jeans for Men",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -219,13 +219,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cereals.jpg",
+                                              "assets/images/category/kids-shoe.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cereal Foods")),
+                                    flex: 1, child: Text("Children Shoes")),
                               ],
                             ),
                           ),
@@ -250,13 +250,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/milo.jpeg",
+                                              "assets/images/category/lady-kid-shoes.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cocoa Powder")),
+                                    flex: 1, child: Text("Female-Kid Shoes")),
                               ],
                             ),
                           ),
@@ -281,13 +281,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/peakmilk.png",
+                                              "assets/images/category/kids-suit.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Milk and Cream")),
+                                    flex: 1, child: Text("Children Suits")),
                               ],
                             ),
                           ),
@@ -312,7 +312,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/sugar.png",
+                                              "assets/images/category/long-sleeve.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -320,7 +320,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Sugar, Syrups and Sweets",
+                                      "Long Sleeve T-Shirts",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -369,12 +369,12 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/bread.jpeg",
+                                              "assets/images/category/sneakers.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
-                                const Expanded(flex: 1, child: Text("Bakery")),
+                                const Expanded(flex: 1, child: Text("Fashion Sneakers")),
                               ],
                             ),
                           ),
@@ -399,13 +399,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/digestive.jpg",
+                                              "assets/images/category/t-shirt.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Biscuits")),
+                                    flex: 1, child: Text("Plain & Printed T-shirts")),
                               ],
                             ),
                           ),
@@ -430,7 +430,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/chips.jpeg",
+                                              "assets/images/category/watches.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -438,7 +438,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Crisps and Chips",
+                                      "men & Women Wrist Watches",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -465,7 +465,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/margarine.jpeg",
+                                              "assets/images/category/jewellery.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -473,7 +473,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Diary, Cheese",
+                                      "Jewelleries",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -512,7 +512,7 @@ class FashionState extends State<Fashion> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 4,
+                                  flex: 2,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -522,13 +522,13 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/coke.jpeg",
+                                              "assets/images/category/glasses.jpg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Bottled Beverages")),
+                                    flex: 1, child: Text("Sun-glasses & Goggles")),
                               ],
                             ),
                           ),
@@ -553,7 +553,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/wine.jpeg",
+                                              "assets/images/category/cap.jpeg",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -561,42 +561,7 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Fine Wine and Liquor",
-                                      textAlign: TextAlign.center,
-                                    )),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromARGB(255, 230, 227, 227),
-                          ),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  flex: 4,
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(10),
-                                          topRight: Radius.circular(10),
-                                        ),
-                                        color: Colors.white,
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                              "assets/images/cleaning.jpeg",
-                                            ),
-                                            fit: BoxFit.fill)),
-                                  ),
-                                ),
-                                const Expanded(
-                                    flex: 1,
-                                    child: Text(
-                                      "Cleaning Tools",
+                                      "Men & Women's Cap/Hat",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -623,7 +588,7 @@ class FashionState extends State<Fashion> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/detergent.jpeg",
+                                              "assets/images/category/women-shoe.webp",
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -631,7 +596,42 @@ class FashionState extends State<Fashion> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Multipurpose Cleaner",
+                                      "Women's Heels & Flats",
+                                      textAlign: TextAlign.center,
+                                    )),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 230, 227, 227),
+                          ),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10),
+                                        ),
+                                        color: Colors.white,
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/category/men-shoe.jpg",
+                                            ),
+                                            fit: BoxFit.fill)),
+                                  ),
+                                ),
+                                const Expanded(
+                                    flex: 1,
+                                    child: Text(
+                                      "Men's Shoes",
                                       textAlign: TextAlign.center,
                                     )),
                               ],

@@ -59,7 +59,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                           image: AssetImage(
-                                            "assets/images/tomato_paste.jpeg",
+                                            "assets/images/product1.jpg"
                                           ),
                                           fit: BoxFit.fill,
                                         )),
@@ -68,7 +68,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cooking Ingredient",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -95,13 +95,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/rice.jpeg",
+                                              "assets/images/product2.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Grains and Rice")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -126,7 +126,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/noodles.jpeg",
+                                              "assets/images/product3.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -134,7 +134,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Pasta, Noodles and Spaghetti",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -151,7 +151,7 @@ class SportingGoodsState extends State<SportingGoods> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -161,7 +161,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cannedfood.jpeg",
+                                              "assets/images/product4.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -169,7 +169,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Canned Food Products",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -219,13 +219,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cereals.jpg",
+                                              "assets/images/product5.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cereal Foods")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -250,13 +250,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/milo.jpeg",
+                                              "assets/images/product6.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Cocoa Powder")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -281,13 +281,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/peakmilk.png",
+                                              "assets/images/product7.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Milk and Cream")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -302,7 +302,7 @@ class SportingGoodsState extends State<SportingGoods> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -312,7 +312,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/sugar.png",
+                                              "assets/images/product8.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -320,7 +320,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Sugar, Syrups and Sweets",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -369,12 +369,12 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/bread.jpeg",
+                                              "assets/images/product9.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
-                                const Expanded(flex: 1, child: Text("Bakery")),
+                                const Expanded(flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -399,13 +399,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/digestive.jpg",
+                                              "assets/images/product10.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Biscuits")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -430,7 +430,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/chips.jpeg",
+                                              "assets/images/product11.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -438,7 +438,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Crisps and Chips",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -465,7 +465,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/margarine.jpeg",
+                                              "assets/images/product12.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -473,7 +473,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Diary, Cheese",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -522,13 +522,13 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/coke.jpeg",
+                                              "assets/images/product13.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
                                 ),
                                 const Expanded(
-                                    flex: 1, child: Text("Bottled Beverages")),
+                                    flex: 1, child: Text("")),
                               ],
                             ),
                           ),
@@ -543,7 +543,7 @@ class SportingGoodsState extends State<SportingGoods> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -553,7 +553,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/wine.jpeg",
+                                              "assets/images/product14.jpg"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -561,7 +561,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Fine Wine and Liquor",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -588,7 +588,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/cleaning.jpeg",
+                                              "assets/images/product1.png"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -596,7 +596,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Cleaning Tools",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -613,7 +613,7 @@ class SportingGoodsState extends State<SportingGoods> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  flex: 2,
+                                  flex: 4,
                                   child: Container(
                                     decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
@@ -623,7 +623,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                         color: Colors.white,
                                         image: DecorationImage(
                                             image: AssetImage(
-                                              "assets/images/detergent.jpeg",
+                                              "assets/images/product2.png"
                                             ),
                                             fit: BoxFit.fill)),
                                   ),
@@ -631,7 +631,7 @@ class SportingGoodsState extends State<SportingGoods> {
                                 const Expanded(
                                     flex: 1,
                                     child: Text(
-                                      "Multipurpose Cleaner",
+                                      "",
                                       textAlign: TextAlign.center,
                                     )),
                               ],
@@ -645,7 +645,7 @@ class SportingGoodsState extends State<SportingGoods> {
           ),
         ),
       ),
-    )
+    ),
     );
   }
 }

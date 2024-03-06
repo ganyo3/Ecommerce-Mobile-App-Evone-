@@ -14,7 +14,7 @@ class SavedItemsState extends State<SavedItems> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    var searchController;
+    // var searchController;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 230, 227, 227),
@@ -111,33 +111,39 @@ class SavedItemsState extends State<SavedItems> {
                             ),
                           ),
                           SizedBox(
-                            width: size.width * 0.3,
+                            width: size.width * 0.25,
                           ),
                           Padding(
                             padding:
                                 EdgeInsets.only(bottom: size.height * 0.01,),
                             child: Container(
-                              width: size.width*0.42,
-                           child: FloatingActionButton.extended(
-                                // shape:CircleBorder(si) ,
-                                backgroundColor: Colors.blue,
-                                // extendedPadding: const EdgeInsets.all(55),
-                                onPressed: () {},
-                              label: const Text(
-                                  'Buy Now',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
+                          ),
+                        ),
+                      ),
                           ),
                         ],
                       ),
                     ],
                   )),
               const Divider(
-                thickness: 10,
+                thickness: 5,
               ),
               Container(
                   decoration: BoxDecoration(
@@ -198,33 +204,39 @@ class SavedItemsState extends State<SavedItems> {
                             ),
                           ),
                           SizedBox(
-                            width: size.width * 0.3,
+                            width: size.width * 0.25,
                           ),
                           Padding(
                             padding:
                                 EdgeInsets.only(bottom: size.height * 0.01,),
-                            child: Container(
-                              width: size.width*0.42,
-                           child: FloatingActionButton.extended(
-                                // shape:CircleBorder(si) ,
-                                backgroundColor: Colors.blue,
-                                // extendedPadding: const EdgeInsets.all(55),
-                                onPressed: () {},
-                              label: const Text(
-                                  'Buy Now',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
+                            child:  Container(
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
+                          ),
+                        ),
+                      ),
                           ),
                         ],
                       ),
                     ],
                   )),
               const Divider(
-                thickness: 10,
+                thickness: 5,
               ),
                Container(
                   decoration: BoxDecoration(
@@ -285,33 +297,39 @@ class SavedItemsState extends State<SavedItems> {
                             ),
                           ),
                           SizedBox(
-                            width: size.width * 0.3,
+                            width: size.width * 0.25,
                           ),
                           Padding(
                             padding:
                                 EdgeInsets.only(bottom: size.height * 0.01,),
-                            child: Container(
-                              width: size.width*0.42,
-                           child: FloatingActionButton.extended(
-                                // shape:CircleBorder(si) ,
-                                backgroundColor: Colors.blue,
-                                // extendedPadding: const EdgeInsets.all(55),
-                                onPressed: () {},
-                              label: const Text(
-                                  'Buy Now',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ),
+                            child:  Container(
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
+                          ),
+                        ),
+                      ),
                           ),
                         ],
                       ),
                     ],
                   )),
               const Divider(
-                thickness: 10,
+                thickness: 5,
               ),
               Container(
                   decoration: BoxDecoration(
@@ -336,12 +354,7 @@ class SavedItemsState extends State<SavedItems> {
                                     'assets/images/sneaker4.jpg',),
                                     fit: BoxFit.cover
                                     )),
-                              // child: Image(
-                              //   image: const AssetImage(
-                              //       'assets/images/sneaker1.jpg'),
-                              //   width: size.width * 0.4,
-                              // ),
-                            ),
+                          ),
                             Padding(
                               padding: EdgeInsets.only(
                                 bottom: size.height * 0.075,
@@ -377,26 +390,218 @@ class SavedItemsState extends State<SavedItems> {
                             ),
                           ),
                           SizedBox(
-                            width: size.width * 0.3,
+                            width: size.width * 0.25,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child:  Container(
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
+                   const Divider(
+                thickness: 5,
+              ),
+              Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
+                                ),
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                  topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/wishlist1.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                          ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
+                                      '\$50.00',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ]),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: size.width * 0.25,
                           ),
                           Padding(
                             padding:
                                 EdgeInsets.only(bottom: size.height * 0.01,),
                             child: Container(
-                              width: size.width*0.42,
-                           child: FloatingActionButton.extended(
-                                // shape:CircleBorder(si) ,
-                                backgroundColor: Colors.blue,
-                                // extendedPadding: const EdgeInsets.all(55),
-                                onPressed: () {},
-                              label: const Text(
-                                  'Buy Now',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
+                   const Divider(
+                thickness: 5,
+              ),
+              Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 230, 227, 227),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Row(children: [
+                            Container(
+                              padding:EdgeInsets.only(
+                                top:size.height*0.2,
+                                right: size.width*0.45,
                                 ),
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(10),
+                                  topLeft: Radius.circular(10)
+                                ),
+                                  image: DecorationImage(image: AssetImage(
+                                    'assets/images/wishlist2.jpg',),
+                                    fit: BoxFit.cover
+                                    )),
+                          ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: size.height * 0.075,
+                                left: size.height * 0.01,
+                              ),
+                              child: const Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Fashion 2Pcs Traditional \nSimple Sneaker Gift Tai-\nGolden',
+                                    ),
+                                    Text(
+                                      '\$50.00',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ]),
+                            ),
+                          ]),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              "Remove",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
+                          ),
+                          SizedBox(
+                            width: size.width * 0.25,
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsets.only(bottom: size.height * 0.01,),
+                            child:  Container(
+                        width: size.width * 0.48,
+                        height: size.width * 0.1,
+                        child: FloatingActionButton.extended(
+                          shape: ContinuousRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          backgroundColor: Colors.orangeAccent,
+                          extendedPadding: const EdgeInsets.all(55),
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          label: const Text(
+                            'Buy Now',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
                           ),
                         ],
                       ),

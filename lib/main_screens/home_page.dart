@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unit_conversion/shopping%20page/wishlist.dart';
-
+import '../shopping page/account_buyer.dart';
+import '../shopping page/wishlist.dart';
+import '../shopping page/checkout.dart';
 import '../shopping page/category/category_page.dart';
 import '../shopping page/shopping_cart.dart';
 import '../user account/login_page.dart';
@@ -1333,7 +1334,9 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=> const CheckOut())
+                  );
                 },
               ),
               ListTile(
@@ -1350,7 +1353,9 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const AccountBuyer())
+                  );
                 },
               ),
               ListTile(
